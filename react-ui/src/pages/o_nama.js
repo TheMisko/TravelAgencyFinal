@@ -6,6 +6,11 @@ import KontaktInfo from "../components/kontaktInfo";
 import Card from "@material-ui/core/Card";
 
 const Onama = () => {
+
+  const koordinate = {
+    first: 44.787197 ,
+    second: 20.45727
+  }
   return (
     <div>
       <NavBar />
@@ -33,16 +38,14 @@ const Onama = () => {
         <img src="https://media.gettyimages.com/photos/portrait-of-smiling-mid-adult-man-wearing-tshirt-picture-id985138674?s=612x612" />
         <img src="https://st3.depositphotos.com/12985790/16524/i/1600/depositphotos_165241112-stock-photo-handsome-smiling-man.jpg" />
       </div>
-      {/* <div className="kontakt-h1">
-        <h1>Kontakt Info</h1>
-      </div> */}
+   
       <div className="oNama-kontakt">
         <KontaktInfo />
       </div>
 
       <div className="oNama-mapa">
         <Card>
-          <Mapa />
+          <Mapa koordinate={koordinate} />
         </Card>
       </div>
 
